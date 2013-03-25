@@ -50,7 +50,9 @@
 .article-header{
   @extend %cf;
   h1{
+    display: inline-block;
     margin-top:0;
+    float:left;
   }
   p{
     float: right;
@@ -75,7 +77,6 @@ aside{
 
 // Document flow
 h1{
-  display: inline-block;
   margin-top:.5em;
   margin-bottom:0;
 }
