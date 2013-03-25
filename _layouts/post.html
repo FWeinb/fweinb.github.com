@@ -1,0 +1,11 @@
+{% include header.html %}
+
+<article class="main-content viewport">
+  <header class="article-header">
+    <h1>{{ page.title }}</h1>
+    <p class="date">{{ page.date | date_to_long_string }}</p>
+  </header>
+  {{ content }}
+</article>
+
+{% include footer.html %}

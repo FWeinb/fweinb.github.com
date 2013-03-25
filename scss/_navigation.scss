@@ -1,0 +1,48 @@
+.main-nav{
+  background:$content-color;
+  text-align:center;
+
+  margin:.625em -.5em;
+
+
+  @include breakpoint($small) {
+    margin-left:0;
+    margin-right:0;
+  }
+
+  ul{
+    @extend %link-list;
+
+    font-size:.95em;
+
+
+    @include breakpoint($menu) {
+      width:100%;
+    }
+
+    li{
+      padding:.5em;
+      border-left:.5em solid $background-color;
+      margin:-.125em 0;
+
+
+      @include breakpoint($menu) {
+        display: block;
+        margin:0 1em;
+        border:.5em solid $background-color;
+        border-bottom-width:0;
+
+        &:first-child{
+          border-top-width:0;
+        }
+      }
+
+      &:last-child{
+        border-right:.5em solid $background-color;
+      }
+    }
+
+  }
+
+ }
+

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
@@ -135,3 +136,68 @@
 </body>
 </html>
 >>>>>>> First index.html
+=======
+---
+title: Home
+layout: default
+---
+<aside>
+  <div class="about">
+    {% include about-me.html %}
+  </div>
+</aside>
+
+<p>Latest Posts:</p>
+
+<ul class="archive-list">
+  {% for post in paginator.posts %}
+    {% if post.published %}
+      <li>
+      {% if post.csstricks %}
+        <a href="{{ post.csstricks }}" target="_blank">{{ post.title }}</a> - [CSS-Tricks]
+      {% else %}
+        <a href="{{ post.url }}">{{ post.title | truncatewords: 15 }}</a>
+      {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<ul class="pagination">
+  {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+          <li>
+            <a href="/">
+              Previous
+            </a>
+          </li>
+      {% else %}
+          <li>
+            <a href="/page{{ paginator.previous_page }}">
+              Previous
+            </a>
+          </li>
+      {% endif %}
+  {% else %}
+      <li class="pagination__disabled">
+        <a href="#">
+          Previous
+        </a>
+      </li>
+  {% endif %}
+
+  {% if paginator.next_page %}
+      <li>
+        <a href="/page{{ paginator.next_page }}">
+          Next
+        </a>
+      </li>
+  {% else %}
+      <li class="pagination__disabled">
+        <a href="#">
+          Next
+        </a>
+      </li>
+  {% endif %}
+</ul>
+>>>>>>> My all new Blog!

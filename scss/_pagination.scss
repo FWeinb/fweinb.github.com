@@ -1,0 +1,16 @@
+.pagination{
+  text-align:center;
+
+  li{
+    display:inline-block;
+  }
+
+  a{
+    color:black;
+    text-decoration: none;
+  }
+}
+
+.pagination__disabled a{
+  display:none;
+}

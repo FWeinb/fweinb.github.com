@@ -1,0 +1,10 @@
+name: "Fabrice Weinberg"
+description: "Just a Blog"
+
+url: "http://localhost:4000"
+
+paginate: 3
+
+markdown: rdiscount
+permalink: pretty
+pygments: true

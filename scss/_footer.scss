@@ -1,0 +1,36 @@
+.main-footer{
+  @extend %viewport;
+  background:$content-color;
+  margin-top:.5em;
+
+  line-height: 1.25em;
+
+  ul{
+    @extend %link-list;
+
+    @include breakpoint($footer-menu){
+      display:block;
+      margin:0 .5em;
+    }
+
+    li{
+      padding:.25em .5em;
+
+      @include breakpoint($footer-menu){
+        border:.5em solid $background-color;
+        border-top-width:0;
+      }
+
+    }
+  }
+
+  span{
+    margin:0 .25em;
+    white-space: nowrap;
+  }
+}
+
+.main-footer__content{
+  font-size:.8em;
+  text-align:right;
+}

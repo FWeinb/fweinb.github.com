@@ -1,0 +1,14 @@
+.avatar{
+  float:right;
+  background: url(http://1.gravatar.com/avatar/89b9501f0f9e3020aab173f9a5a47683?size=150);
+  width:150px;
+  height:150px;
+  margin:.5em;
+
+  max-width:100%;
+
+  @include retina(){
+    background:url(http://1.gravatar.com/avatar/89b9501f0f9e3020aab173f9a5a47683?size=300);
+    background-size: 150px;
+  }
+}

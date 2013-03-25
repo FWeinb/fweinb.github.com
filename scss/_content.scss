@@ -1,0 +1,165 @@
+.main-content{
+  @extend %viewport;
+  @extend %cf;
+
+  padding:$content-padding;
+
+  line-height:1.5;
+
+  background:white;
+
+  @include breakpoint($small){
+    padding:$content-padding-small;
+  }
+
+  a{
+    padding:.125em .15em;
+    margin:0 -.1em;
+    color: $link-color;
+    text-decoration:none;
+
+    &:hover{
+     color:$content-color;
+     background: $link-color;
+    }
+  }
+
+  p, h1, h2, h3, h4, h5, h6{
+    padding-left:$content-padding;
+    padding-right:$content-padding;
+    @include breakpoint($small){
+      padding-left:$content-padding-small;
+      padding-right:$content-padding-small;
+    }
+  }
+
+}
+
+.archive-list{
+  @extend .no-mp;
+  list-style:none;
+  a{
+    color:black;
+    text-decoration:underline;
+  }
+  span{
+    float:right;
+  }
+}
+
+.article-header{
+  @extend %cf;
+  h1{
+    margin-top:0;
+  }
+  p{
+    float: right;
+    margin-top:0;
+    color: $meta;
+    font-size: .8em;
+  }
+}
+
+aside{
+  @extend %border-box;
+
+  padding:.5em;
+  margin-bottom: 1em;
+
+  p,h1{
+   margin:0 !important;
+   padding:0 !important;
+  }
+}
+
+
+// Document flow
+h1{
+  display: inline-block;
+  margin-top:.5em;
+  margin-bottom:0;
+}
+
+p{
+  margin:.5em 0 .25em 0;
+}
+
+blockquote{
+  @extend .no-m;
+  @extend %border-box;
+
+
+  font-size:.8em;
+
+  text-align: center;
+  position: relative;
+  padding:2.1em 0;
+
+  p{
+    @extend .no-m;
+  }
+
+  &:before,
+  &:after{
+    font-size:2em;
+    font-weight: bold;
+    color:$content-color;
+    line-height: 1.25em;
+
+    position:absolute;
+    padding:0 .2em;
+    background:$background-color;
+  }
+  &:before{
+    content:'\201c';
+    top:0;
+    left:0;
+  }
+  &:after{
+    content:'\201d';
+    bottom:0;
+    right:0;
+  }
+}
+
+ol, ul{
+  margin: .25em 0;
+  padding-left: $content-padding;
+
+  @include breakpoint($small){
+    padding-left:1.6em;
+  }
+}
+
+img{
+  max-width: 100%;
+  @include breakpoint($small) {
+    float:none !important;
+    padding:0 !important;
+  }
+}
+
+.image-center, .image-right-block, .image-left-block{
+  display:block;
+  margin: .25em auto;
+}
+
+.image-right{
+  float: right;
+  padding:0 0 1em 1em;
+}
+
+.image-left{
+  float: left;
+  padding:0 1em 1em 0;
+}
+
+.image-right-block{
+  margin-right:0;
+}
+.image-left-block{
+  margin-left:0;
+}
+
+
+@import "_pagination.scss";
