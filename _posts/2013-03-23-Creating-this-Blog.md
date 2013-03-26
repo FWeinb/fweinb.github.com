@@ -8,7 +8,7 @@ Every once in a while I want to have my own little place on the Web where I coul
 After reading about [Hugos move to Jekyll](http://hugogiraudel.com/2013/02/21/jekyll/) I know that this is exactly what I want.
 I love exploring new thinks and [Jekyll](https://github.com/mojombo/jekyll) seams to fit my needs exactly.
 
-I know, I could have used [tumblr](http://www.tumblr.com/) or [any](http://scriptogr.am/) [of](www.blogger.com/) [these](http://wordpress.com/) services to get started in under a minute, but thats not what all this is about.
+I know, I could have used [tumblr](http://www.tumblr.com/) or [any](http://scriptogr.am/) [of](http://www.blogger.com/) [these](http://wordpress.com/) services to get started in under a minute, but thats not what all this is about.
 
 I just want to try something new.
 
@@ -63,7 +63,7 @@ After adding some structure to my SCSS which was written on CodePen, I started w
 
 ## Wrapping it up
 
-After all this years I now have my own little blog, build from ground up by myself (At least for the front-end). Learned quite a lot in the whole process and hope that I will learn a lot more while writing here about what I do.
+After all this years I now have my own little blog, built from ground up by myself (at least for the front-end). Learned quite a lot in the whole process and hope that I will learn a lot more while writing here about what I do.
 
 
-If you find a bug or just think that you can improve something please open a issue on GitHub. Or just let me know about it on twitter.
+If you find a bug or just think that you can improve something please [open an issue](https://github.com/FWeinb/fweinb.github.com/issues) on GitHub. Or just let me know about it on twitter.

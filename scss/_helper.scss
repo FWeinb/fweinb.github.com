@@ -82,25 +82,31 @@
     display:inherit;
     cursor:pointer;
 
+    text-align: center;
 
-    background: $content-color;
     border-left:.5em solid $background-color;
 
 
-    text-align: center;
+    @include background-image(linear-gradient(230deg, transparent 50%, $link-color 0));
+    background-repeat:no-repeat;
+    background-size:100% 500%;
+    background-color: $content-color;
 
-    @include transition(box-shadow .5s);
+
+
+    @include transition(background-position .2s, color .2s);
+
+    &:hover{
+     color:$content-color;
+     background-position:0 100%;
+    }
 
     &:last-child{
       border-right:.5em solid $background-color;
     }
-
-    &:hover{
-     @include box-shadow(0 .25em $link-color inset);
-    }
   }
   a{
-    color:black;
+    color:inherit;
     text-decoration: none;
   }
 }
