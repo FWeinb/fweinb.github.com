@@ -59,6 +59,8 @@ Compass was already installed on my machine so I just started an empty project a
 
 ## Make it mobile friendly
 
+<img src="/images/blog-creating/mobile-drawing.jpg" class="image-left" />
+
 After adding some structure to my SCSS which was written on CodePen, I started with making it responsive. As I mentioned before this design is quite simple so I don't have to go all that fence with my media queries, the only thing I had to really care about is the Navigation, the links in the footer and removing some margin to use the limited space a little better.
 
 ## Wrapping it up
