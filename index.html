@@ -2,14 +2,6 @@
 title: Home
 layout: default
 ---
-<aside>
-  <div class="about">
-    {% include about-me.html %}
-  </div>
-</aside>
-
-<p>Latest Posts:</p>
-
 <ul class="archive-list">
   {% for post in paginator.posts %}
     {% if post.published %}
@@ -61,3 +53,9 @@ layout: default
       </li>
   {% endif %}
 </ul>
+
+<aside>
+  <div class="about">
+    {% include about-me.html %}
+  </div>
+</aside>

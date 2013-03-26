@@ -18,6 +18,8 @@
     color: $link-color;
     text-decoration:none;
 
+    @include transition(background-color .3s, color .2s);
+
     &:hover{
      color:$content-color;
      background: $link-color;
