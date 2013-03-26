@@ -92,9 +92,7 @@
     background-size:100% 500%;
     background-color: $content-color;
 
-
-
-    @include transition(background-position .2s, color .2s);
+    @include transition(background .2s, color .2s);
 
     &:hover{
      color:$content-color;
@@ -103,6 +101,13 @@
 
     &:last-child{
       border-right:.5em solid $background-color;
+    }
+
+    @include breakpoint($small){
+      background-image: none;
+      &:hover{
+        background-color: red;
+      }
     }
   }
   a{
