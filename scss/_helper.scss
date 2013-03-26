@@ -89,14 +89,14 @@
 
     text-align: center;
 
-    @include transition(box-shadow 1s);
+    @include transition(box-shadow .5s);
 
     &:last-child{
       border-right:.5em solid $background-color;
     }
 
     &:hover{
-      @include box-shadow(0 5px solid $link-color);
+     @include box-shadow(0 .25em $link-color inset);
     }
   }
   a{
