@@ -43,14 +43,10 @@
     color:black;
     text-decoration:underline;
   }
-  .date{
-    float:right;
-  }
 }
 
 .article-header{
   @extend %cf;
-
 
   h1{
     display: inline-block;
@@ -58,21 +54,20 @@
     margin-top:0;
     float:left;
   }
-  p{
-    float: right;
-    margin-top:0;
-    color: $meta;
-    font-size: .8em;
-  }
-  .date{
-    margin-top: 1.5em
-  }
 
   @include breakpoint($small){
     font-size:.95em;
   }
 }
 
+
+.date{
+  margin-top: 1.5em;
+  float: right;
+  margin-top:0;
+  color: $meta;
+  font-size: .8em;
+}
 
 .image-center, .image-right-block, .image-left-block{
   display:block;
@@ -97,7 +92,8 @@
 }
 
 aside{
-  @extend %border-box;
+  @extend %border-left;
+
 
   padding:.5em;
   margin-bottom: 1em;

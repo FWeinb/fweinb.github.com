@@ -69,6 +69,10 @@
   border:$border-size solid $background-color;
 }
 
+%border-left{
+  border-left:$border-size solid $background-color;
+}
+
 
 %link-list{
   @extend .no-mp;

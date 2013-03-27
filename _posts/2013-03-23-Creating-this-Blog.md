@@ -44,10 +44,10 @@ I came up with the basic layout for this site. Separating the link in the naviga
 
 ## Adding Color
 
-The design goal was to create a design that would only relay on two main colors. Finding the foreground color was quite easy, I choose white. The tough part was to find a good looking background color. I tried to find a good color using [kulor](http://kuler.adobe.com) (Beware it's written in Flash!) It should be some light blue color not to bright and pleasant on the eye.
+The goal was to create a design that would only relay on two main colors. Finding the foreground color was quite easy, I chose white. The tough part was to find a good looking background color. I tried to find a good color using [kulor](http://kuler.adobe.com) (Beware it's written in Flash!) It should be some light blue color not to bright and pleasant on the eye.
 
 Colors are such a subjective topic so I thought that it's the best to ask what other people think.
-So I choose a color I liked and asked some people I know from CodePen [Hugo](https://twitter.com/HugoGiraudel), [Tim](https://twitter.com/TimPietrusky), [Sara](https://twitter.com/SaraSoueidan), [Josh](https://twitter.com/_joshnh), [Mads](https://twitter.com/Mobilpadde) and [Ana](https://twitter.com/thebabydino) (basicly the whole [4ae9b8](http://4ae9b8.com/) Team) if they like it.
+So I chose a color I liked and asked some people I know from CodePen [Hugo](https://twitter.com/HugoGiraudel), [Tim](https://twitter.com/TimPietrusky), [Sara](https://twitter.com/SaraSoueidan), [Josh](https://twitter.com/_joshnh), [Mads](https://twitter.com/Mobilpadde) and [Ana](https://twitter.com/thebabydino) (basically the whole [4ae9b8](http://4ae9b8.com/) Team) if they liked it.
 
 They provided great feedback and after some little changes to the color and some minor design changes I was ready to build the real thing!
 
