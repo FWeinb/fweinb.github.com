@@ -65,7 +65,6 @@ After adding some structure to my SCSS which was written on CodePen, I started w
 
 ## Wrapping it up
 
-After all this years I now have my own little blog, built from ground up by myself (at least for the front-end). Learned quite a lot in the whole process and hope that I will learn a lot more while writing here about what I do.
+After these years, I now have my own little blog, built from ground up by myself (at least for the front-end). Learned quite a lot during the whole process and I hope that I will learn a lot more while writing here about what I do.
 
-
-If you find a bug or just think that you can improve something please [open an issue](https://github.com/FWeinb/fweinb.github.com/issues) on GitHub. Or just let me know about it on twitter.
+If you find a bug or just think that you can improve something, please [open an issue](https://github.com/FWeinb/fweinb.github.com/issues) on GitHub. Or just let me know about it on twitter.
