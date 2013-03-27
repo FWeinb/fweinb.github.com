@@ -5,10 +5,10 @@ published: true
 ---
 Every once in a while I want to have my own little place on the Web where I could write about stuff I do.
 
-After reading about [Hugos move to Jekyll](http://hugogiraudel.com/2013/02/21/jekyll/) I know that this is exactly what I want.
-I love exploring new thinks and [Jekyll](https://github.com/mojombo/jekyll) seams to fit my needs exactly.
+After reading about [Hugos move to Jekyll](http://hugogiraudel.com/2013/02/21/jekyll/) I knew that this is exactly what I want.
+I love exploring new things and [Jekyll](https://github.com/mojombo/jekyll) seems to fit my needs exactly.
 
-I know, I could have used [tumblr](http://www.tumblr.com/) or [any](http://scriptogr.am/) [of](http://www.blogger.com/) [these](http://wordpress.com/) services to get started in under a minute, but thats not what all this is about.
+I knew, I could have used [tumblr](http://www.tumblr.com/) or [any](http://scriptogr.am/) [of](http://www.blogger.com/) [these](http://wordpress.com/) services to get started in under a minute, but thats not what all this is about.
 
 I just want to try something new.
 
