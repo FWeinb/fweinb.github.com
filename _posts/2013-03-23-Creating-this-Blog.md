@@ -49,19 +49,19 @@ The goal was to create a design that would only relay on two main colors. Findin
 Colors are such a subjective topic so I thought that it's the best to ask what other people think.
 So I chose a color I liked and asked some people I know from CodePen [Hugo](https://twitter.com/HugoGiraudel), [Tim](https://twitter.com/TimPietrusky), [Sara](https://twitter.com/SaraSoueidan), [Josh](https://twitter.com/_joshnh), [Mads](https://twitter.com/Mobilpadde) and [Ana](https://twitter.com/thebabydino) (basically the whole [4ae9b8](http://4ae9b8.com/) Team) if they liked it.
 
-They provided great feedback and after some little changes to the color and some minor design changes I was ready to build the real thing!
+They provided great feedback, and after some little changes, to the color and some minor design changes I was ready to build the real thing!
 
 ## Setting up Jekyll + Compass
 
-Install Jekyll was straightforward on OS X 10.8.3 I just typed `gem install jekyll` for jekyll, `sudo gem install rdiscount` for RDiscount and `sudo easy_install Pygments` for the syntax highlighting. For a more in depth explanation you can read [this](http://www.andrewmunsell.com/tutorials/jekyll-by-example/) tutorial recommend by Hugo in his post on [moving to jekyll](http://hugogiraudel.com/2013/02/21/jekyll/) which inspired me to start this blog.
+Installing Jekyll was straightforward on OS X 10.8.3 - I just typed `gem install jekyll` for jekyll, `sudo gem install rdiscount` for RDiscount and `sudo easy_install Pygments` for the syntax highlighting. For a more in depth explanation, you can read [this](http://www.andrewmunsell.com/tutorials/jekyll-by-example/) tutorial recommend by Hugo in his post on [moving to jekyll](http://hugogiraudel.com/2013/02/21/jekyll/) which inspired me to start this blog.
 
-Compass was already installed on my machine so I just started an empty project and configured the `config.rb` and was good to go.
+Compass was already installed on my machine, so I just started an empty project and configured the `config.rb` and was good to go.
 
 ## Make it mobile friendly
 
 <img src="/images/blog-creating/mobile-drawing.jpg" class="image-left" />
 
-After adding some structure to my SCSS which was written on CodePen, I started with making it responsive. As I mentioned before this design is quite simple so I don't have to go all that fence with my media queries, the only thing I had to really care about is the Navigation, the links in the footer and removing some margin to use the limited space a little better.
+After adding some structure to my SCSS which was written on CodePen, I started with making it responsive. As I mentioned before this design is quite simple so I don't have to go all that fancy with my media queries, the only thing I had to really care about is the Navigation, the links in the footer and removing some margin to use the limited space a little better.
 
 ## Wrapping it up
 
