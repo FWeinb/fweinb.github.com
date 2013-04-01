@@ -26,13 +26,18 @@
     }
   }
 
-  p, h1, h2, h3, h4, h5, h6{
+  p, h1, h2, h3, h4, h5, h6, footer{
     padding-left:$content-padding;
     padding-right:$content-padding;
     @include breakpoint($small){
       padding-left:$content-padding-small;
       padding-right:$content-padding-small;
     }
+  }
+  footer{
+    font-size: .75em;
+    color:gray;
+    text-align: right;
   }
 }
 
@@ -67,6 +72,13 @@
   margin-top:0;
   color: $meta;
   font-size: .8em;
+}
+
+.image-group{
+  @extend %cf;
+  display: block;
+  margin: 0 auto;
+  max-width:610px;
 }
 
 .image-center, .image-right-block, .image-left-block{
