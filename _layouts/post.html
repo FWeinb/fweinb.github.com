@@ -6,6 +6,18 @@
     <p class="date">{{ page.date | date_to_long_string }}</p>
   </header>
   {{ content }}
+  <div class="kudos" data-amount="0" data-url="http://blog.weinberg.me{{page.url}}"></div>
 </article>
+<script src="/js/kudosplease.min.js"></script>
+<script>
+  new KudosPlease({
+      el : '.kudos',
+      persist : true,
+      duration : 1500,
+      status : {
+        gamma: 'kudos-finish'
+      }
+  });
+</script>
 
 {% include footer.html %}

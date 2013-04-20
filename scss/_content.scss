@@ -44,6 +44,11 @@
 
 .archive-list{
   list-style:none;
+  li{
+    @include breakpoint($small){
+      padding:.25em 0;
+    }
+  }
   a{
     color:black;
     text-decoration:underline;
@@ -54,10 +59,10 @@
   @extend %cf;
 
   h1{
+    float:left;
     display: inline-block;
     font-size:2.25em;
     margin-top:0;
-    float:left;
   }
 
   @include breakpoint($small){
@@ -65,12 +70,9 @@
   }
 }
 
-
 .date{
-  margin-top: 1.5em;
-  float: right;
-  margin-top:0;
-  color: $meta;
+  float:right;
+  color:$meta;
   font-size: .8em;
 }
 
@@ -121,11 +123,9 @@ blockquote{
   @extend %border-box;
 
 
-  font-size:.8em;
-
   text-align: center;
   position: relative;
-  padding:2.1em 0;
+  padding:2.1em 1em;
 
   p{
     @extend .no-m;
@@ -135,21 +135,18 @@ blockquote{
   &:after{
     font-size:2em;
     font-weight: bold;
-    color:$content-color;
-    line-height: 1.25em;
 
     position:absolute;
     padding:0 .2em;
-    background:$background-color;
   }
   &:before{
     content:'\201c';
-    top:0;
+    top:-.2em;
     left:0;
   }
   &:after{
     content:'\201d';
-    bottom:0;
+    bottom:-.55em;
     right:0;
   }
 }
@@ -179,6 +176,9 @@ img{
   }
 }
 
+iframe{
+  margin:0.25em 0;
+}
 
 
 @import "_pagination.scss";
