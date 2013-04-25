@@ -1,6 +1,7 @@
 ---
 title: Continuously Rotating Element
 layout: post
+published: true
 ---
 
 Just a quick CSS3 transitions and animations tip today. After cleaning up my dropbox I found some old code of mine implementing a little game in another programming language using OpenGL to draw everything, the code dated back to 2009. I thought I'd rewrite it in JavaScript and render it using CSS/HTML.
@@ -12,17 +13,18 @@ The game logic is quite simple, you click on a circle which then rotates 90deg c
 You can try a live demo here:
 <pre class="codepen" data-height="740" data-type="result" data-href="JjBhk" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/JjBhk">Check out this Pen!</a></pre>
 
-If you watch these little circles, after clicking on one, you can see that they rotate continuously. These circles have four states;  0, 90, 180 or 270 degrees rotated clockwise. These states are represented by a CSS selector (in this case a attribute selector). Now to create a continous animation between these states always rotating clockwise, I first started using a simple transition like this:
+If you watch these little circles, after clicking on one, you can see that they rotate continuously. These circles have four states;  0, 90, 180 or 270 degrees rotated clockwise. These states are represented by a CSS selector (in this case a attribute selector).
+
+To create a continous animation between these states always rotating clockwise, I first started using a simple transition like this:
 
 <pre class="codepen" data-height="300" data-type="css" data-href="e41290586d3c2579ef0c90f44fbae956" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/bJCfo">Check out this Pen!</a></pre>
 
-You my notice that everything looks good except the transition between `data-state='3'` and `data-state='0' where the whole circle rotates anti-clockwise.
-To figure out why this is happening lets look at the angles that are involved in all these transition:
+You my notice that everything looks good except the transition between `data-state='3'` and `data-state='0' where the whole circle rotates anticlockwise.
+To figure out why this is happening lets look at the angles that are involved in all these transitions:
 
 `0 -> 90 -> 180 -> 270 -> 0`
 
-And there it is! Between the first three transition we are increasing the angle resulting in a clockwise rotation. Only the last transition decreases the angle, and therefor a anti-clockwise rotation.
-
+And there it is! Between the first three transition the angle is increasing resulting in a clockwise rotation. Only the last transition decreases the angle, and therefor a anticlockwise rotation.
 
 ## How to solve it?
 
@@ -31,9 +33,9 @@ After asking the [#4ae9b8 Team](4ae9b8.com) for help, [Sara Soueidan](http://sar
 So I gave it a try:
 <pre class="codepen" data-height="300" data-type="css" data-href="2adb7073fca4e81afe331cce079f2b62" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/vhzyg">Check out this Pen!</a></pre>
 
-Woah, this is quite much code, four animations are needed for this to work. I first thought that it would be possible to omit the `0%{}` declaration in `@keyframes` because setting the `animation-fill-mode:forwards` but after the state change the animation isn't applied to the element anymore and therefor the animation would start from 0 degree.
+Woah, this is quite much code, four animations are needed for this to work. At first I thought that it would be possible to omit the `0%{}` declaration in `@keyframes` because setting the `animation-fill-mode:forwards` should 'fill in' the state. But after the state has changed the animation isn't applied anymore and therefor the animation would start from 0 degree.
 
-It's working but is far away from usable, even after jumped in [Hugo Griaudle](http://hugogiraudel.com/) and made a SASS mixin for [it](http://jsfiddle.net/TD8zW/2/) (he just makes a mixing for everything).
+This method is working but is far away from usable, even after [Hugo Griaudle](http://hugogiraudel.com/) jumped in and made a SASS mixin for [it](http://jsfiddle.net/TD8zW/2/) (he just makes a mixing for everything).
 
 ## Everything is a Remix!
 
