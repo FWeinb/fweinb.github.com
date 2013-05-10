@@ -24,7 +24,7 @@ if you haven't heard of it yet you should definitely read that articel first.
 ## Using BEM in SCSS
 
 I am using SCSS to write my CSS but when it comes to BEM the syntax isn't optimal.
-SCSS is great but can be improved reagarding BEM syntax.<
+SCSS is great but can be improved reagarding BEM syntax.
 
 
 ### A simple example
@@ -50,7 +50,7 @@ There is to much replication. You can see that '.block' is written three times t
 
 In SCSS there is the [Referencing Parent Selectors](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#referencing_parent_selectors_): `&` which is most often use in combination with pseudo classes like `:hover`, `:before` or `:after`.
 
-But woudn't it be great to write it like this:
+But woudn't it be great to write BEM SCSS like this:
 <div class="highlight-full-view">
 {% highlight scss %}
 .block{
