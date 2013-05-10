@@ -35,7 +35,7 @@ So I gave it a try:
 
 Woah, this is quite much code, four animations are needed for this to work. At first I thought that it would be possible to omit the `0%{}` declaration in `@keyframes` because setting the `animation-fill-mode:forwards` should 'fill in' the state. But after the state has changed the animation isn't applied anymore and therefor the animation would start from 0 degree.
 
-This method is working but is far away from usable, even after [Hugo Griaudle](http://hugogiraudel.com/) jumped in and made a SASS mixin for [it](http://jsfiddle.net/TD8zW/2/) (he just makes a mixing for everything).
+This method is working but is far away from usable, even after [Hugo Giraudel](http://hugogiraudel.com/) jumped in and made a SASS mixin for [it](http://jsfiddle.net/TD8zW/2/) (he just makes a mixing for everything).
 
 ## Everything is a Remix!
 
