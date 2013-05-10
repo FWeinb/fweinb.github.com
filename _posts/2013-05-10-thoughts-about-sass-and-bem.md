@@ -21,6 +21,9 @@ if you haven't heard of it yet you should definitely read that articel first.
 
 [5]: http://nicolasgallagher.com/about-html-semantics-front-end-architecture/
 [MindBEMding]: http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+[SCSS]: http://sass-lang.com/
+[BEM]:  http://bem.info/
+[Yandex]: http://www.yandex.ru/
 
 ## Using BEM in SCSS
 
@@ -113,9 +116,9 @@ Resulting in
 {% endhighlight %}
 </div>
 
+# Wrapping up
 
+It's just a small change to SASS but, in my eyes, it would greatly improve the readability of SCSS.
 
-
-[SCSS]: http://sass-lang.com/
-[BEM]:  http://bem.info/
-[Yandex]: http://www.yandex.ru/
+I would like to know what you think about this syntax. Is it superfluous, or do you think it's usefull? Have you any other idea on how to
+improve SCSS?
