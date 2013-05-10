@@ -99,7 +99,7 @@ The great thing about this would be that elements and modifiert would be block a
 </div>
 Resulting in
 <div class="highlight-full-view">
-{% highlight scss %}
+{% highlight css %}
 .block1{
 }
 .block2{
