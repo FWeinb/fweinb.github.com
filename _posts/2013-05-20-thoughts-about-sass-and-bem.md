@@ -4,7 +4,7 @@ layout: post
 ---
 
 Writing efficent CSS is hard, we all know that. There are [many][1] [articles][2] [out][3] [there][4] regarding this topic.
-I don't want do repeat everything sad in these articels.
+I don't want do repeat everything said in these articels.
 Rather I want to share my thoughts about [BEM] in combination with [SCSS].
 
 [1]: http://csswizardry.com/2011/09/writing-efficient-css-selectors/
@@ -14,8 +14,8 @@ Rather I want to share my thoughts about [BEM] in combination with [SCSS].
 
 ## What is BEM?
 
-BEM stands for **B**lock**E**lement**M**odifier and is naming convention created by [Yandex].
-I first heard of it in Harry Roberts articel [MindBEMding – getting your head ’round BEM syntax] [MindBEMding],
+BEM stands for **B**lock**E**lement**M**odifier and is a naming convention created by [Yandex].
+I first heard of it in [Harry Roberts](http://csswizardry.com/) articel [MindBEMding – getting your head ’round BEM syntax] [MindBEMding],
 if you haven't heard of it yet you should definitely read that articel first.
 
 [5]: http://nicolasgallagher.com/about-html-semantics-front-end-architecture/
@@ -111,6 +111,8 @@ Resulting in
 }
 {% endhighlight %}
 </div>
+
+
 
 
 [SCSS]: http://sass-lang.com/
