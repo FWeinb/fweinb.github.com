@@ -1,6 +1,7 @@
 ---
 title: Thoughts About SCSS and BEM
 layout: post
+published: true
 ---
 
 Writing efficent CSS is hard, we all know that. There are [many][1] [articles][2] [out][3] [there][4] regarding this topic.
@@ -32,7 +33,7 @@ SCSS is great but can be improved reagarding BEM syntax.
 This is what a BEM structure would currently look like in SCSS
 
 <div class="highlight-full-view">
-{% highlight scss %}
+{% highlight css %}
 .block{
 }
     .block__element{
@@ -63,7 +64,7 @@ But woudn't it be great to write BEM SCSS like this:
 </div>
 to get:
 <div class="highlight-full-view">
-{% highlight scss %}
+{% highlight css %}
 .block{
 }
 .block__element{
