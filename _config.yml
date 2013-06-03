@@ -12,3 +12,8 @@ pygments: true
 
 prose:
   siteurl: "http://blog.weinberg.me"
+  metadata:
+      "_posts": |
+        layout: post
+        title: "New Title Here"
+        published: true
