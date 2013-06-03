@@ -16,4 +16,5 @@ prose:
       "_posts": |
         layout: post
         title: "New Title Here"
-        published: true
+	published: true
+  media: "images"
