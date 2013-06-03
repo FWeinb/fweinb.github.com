@@ -35,7 +35,7 @@ I never worked with [YAML](http://www.yaml.org/) before and therefor I was quite
 
 I ended up with this:
 <div class="highlight-full-view">
-```yml
+```css
 prose:
   siteurl: "http://blog.weinberg.me"
   media: "images"
