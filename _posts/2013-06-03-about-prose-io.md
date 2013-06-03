@@ -11,7 +11,7 @@ title: New Title Here
 
 This **is a test** You can have some Markdown here!
 
-```
+```js
 $.extend({}, this.defaultOptions, options);
 
 ```
