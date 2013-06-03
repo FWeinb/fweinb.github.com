@@ -13,8 +13,20 @@ pygments: true
 prose:
   siteurl: "http://blog.weinberg.me"
   metadata:
-      "_posts": |
-        layout: post
-        title: "New Title Here"
-	published: true
+      _posts:
+        - name: "published"
+          field:
+            label: "Published"
+            element: "checkbox"
+            value: true
+        - name: "layout"
+          field:
+            label:"Layout"
+            element:"text"
+            value:"post"
+        - name: "title"
+          field:
+            label:"Title"
+            element:"text"
+            value:"A awesome Headline!"
   media: "images"
