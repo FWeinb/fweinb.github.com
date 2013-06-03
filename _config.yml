@@ -12,21 +12,21 @@ pygments: true
 
 prose:
   siteurl: "http://blog.weinberg.me"
-  metadata:
-      _posts:
-        - name: "published"
-          field:
-            label: "Published"
-            element: "checkbox"
-            value: true
-        - name: "layout"
-          field:
-            label:"Layout"
-            element:"text"
-            value:"post"
-        - name: "title"
-          field:
-            label:"Title"
-            element:"text"
-            value:"A awesome Headline!"
   media: "images"
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: "true"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element:" text"
+          value: "post"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+          value: "A awesome Headline!"
