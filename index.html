@@ -5,7 +5,6 @@ layout: default
 <h1>Recent Posts:</h1>
 <ul class="archive-list">
   {% for post in paginator.posts %}
-    {% if post.published  %}
       <li>
       {% if post.csstricks %}
           <a href="{{ post.csstricks }}" target="_blank">{{ post.title }}</a> - [CSS-Tricks]
@@ -14,7 +13,6 @@ layout: default
       {% endif %}
           <span class="date">{{ post.date | date: "%d %B %Y" }}</span>
       </li>
-    {% endif %}
   {% endfor %}
 </ul>
 
