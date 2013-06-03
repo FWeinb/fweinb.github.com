@@ -5,7 +5,7 @@ url: "http://blog.weinberg.me"
 
 paginate: 10
 
-markdown: rdiscount
+markdown: redcarpet
 permalink: pretty
 pygments: true
 
