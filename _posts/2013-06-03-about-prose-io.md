@@ -1,7 +1,5 @@
 ---
-published: 
-  - "false"
-  - "true"
+published: false
 layout: post
 title: "About Prose.io and why it's awesome!"
 
