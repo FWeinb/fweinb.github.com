@@ -35,7 +35,7 @@ I never worked with [YAML](http://www.yaml.org/) before and therefor I was quite
 
 I ended up with this:
 <div class="highlight-full-view">
-{% highlight YAML %}
+```yaml
 prose:
   siteurl: "http://blog.weinberg.me"
   media: "images"
@@ -56,7 +56,7 @@ prose:
           label: "Title"
           element: "text"
           value: "A awesome Headline!"
-{% endhighlight %}
+```
 </div>
 
 
@@ -64,7 +64,6 @@ prose:
 Basicly this tells prose where your blog/site is hosted (`siteurl`) and where to look for media fiels (`media`). 
 
 The `metadata` field is the interesting part here. 
-
 
 
 
