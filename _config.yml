@@ -1,0 +1,14 @@
+name: "Fabrice Weinberg"
+description: "Just a Blog"
+
+url: "http://blog.weinberg.me"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+pygments: true
+
+
+prose:
+  siteurl: "http://blog.weinberg.me"
