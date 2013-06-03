@@ -23,7 +23,7 @@ prose:
       - name: "layout"
         field:
           label: "Layout"
-          element:" text"
+          element: "text"
           value: "post"
       - name: "title"
         field:
