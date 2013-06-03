@@ -11,7 +11,8 @@ title: New Title Here
 
 This **is a test** You can have some Markdown here!
 
-```js
+<div class="highlight-full-view">
+{% highlight css %}
 $.extend({}, this.defaultOptions, options);
-
-```
+{% endhighlight %}
+</div>
