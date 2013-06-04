@@ -8,14 +8,14 @@ title: "About Prose.io and why it's awesome!"
 Writing a blog post with Jekyll goes like this:
 
 1. Find your Computer
-2. Fire up your favorit editor (e.g. Sublime Text 2)
+2. Fire up your favorite editor (e.g. Sublime Text 2)
 3. Write the blog post
 4. Commit
 
 
 ## What is the problem with that?
 
-You have to be on your Computer and have everything setup to commit to your GitHub acccount. You could argue that this is fine in 99% percent of the cases, but in those where you don't have access to your computer you can't fix that annyoing typo someone pointed out to you and you are so deeply ashamed of.
+You must have access to your computer and have everything setup to commit to your GitHub account. You could argue that this is fine in 99% percent of the cases, but in those where you don't you can't fix that annoying typo someone pointed out to you and you are so deeply ashamed of.
 
 ## How to fix it?
 
@@ -23,10 +23,9 @@ Meet [Prose.io](http://prose.io) I just found it yesterday and am writing this b
 
 ![Screenshot of this blog post ](/images/screenshot.png)
 
-
 ## Getting started with Prose.io 
 
-Prose.io is completly open source and build with [Backbone.js](http://backbonejs.org/). You can [host it yourself](https://github.com/prose/prose/blob/master/CONTRIBUTING.md#building--installing) or just sign in with your GitHub account on [Prose.io](http://prose.io)
+Prose.io is completely open source and build with [Backbone.js](http://backbonejs.org/). You can [host it yourself](https://github.com/prose/prose/blob/master/CONTRIBUTING.md#building--installing) or just sign in with your GitHub account on [Prose.io](http://prose.io).
 
 ## Settings up your \_config.yml
 
@@ -57,7 +56,19 @@ prose:
           value: "A awesome Headline!"
 ```
 
+Basically this tells prose where your blog/site is hosted (`siteurl`) and where to look for media files (`media`). 
 
-Basicly this tells prose where your blog/site is hosted (`siteurl`) and where to look for media files (`media`). 
+The `metadata` field is the most interesting part here. With that field you can customize the Metadata Viewer on Prose.io. With the metadata from above you get something like this: 
 
-The `metadata` field is the interesting part here. With that field you can customize the Metadata Viewer on Prose.io
+![Screenshot of my Metadata Viewer on Prose.io](/images/Metadata%20prose.io.png)
+
+
+## I really like it
+
+I am really pleased with what prose.io is offering me. The UI is just beautiful and gets out of the way in most cases. Some would argue that the contrast isn't that good but I like it that way. 
+Prose.io isn't limited to be used for your blog. You get access to all your Repositories and can any file you want; which is great for making quick fixes to your README.md on the go. 
+
+Prose.io closes the last feature that Jekyll on GitHub Pages is missing. You can now edit your articles from the browser without needing access to your computer. 
+
+So check it out and tell me how you like it! 
+
