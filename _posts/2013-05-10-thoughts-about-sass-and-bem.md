@@ -44,7 +44,7 @@ This is what a BEM structure would currently look like in SCSS
     .block--modifier{
     }
 
-``
+```
 </div>
 
 To be honest, this is just plain CSS no SCSS feature was used. But what is the Problem with that?
