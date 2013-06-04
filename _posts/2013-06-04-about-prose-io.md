@@ -37,7 +37,6 @@ I never worked with [YAML](http://www.yaml.org/) before and therefore was quite 
 I ended up with this:
 
 ```
-<pre>
 prose:
   siteurl: "http://blog.weinberg.me"
   media: "images"
@@ -58,7 +57,6 @@ prose:
           label: "Title"
           element: "text"
           value: "A awesome Headline!"
-</pre>
 ```
 
 
