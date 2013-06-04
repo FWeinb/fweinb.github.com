@@ -1,9 +1,11 @@
 ---
-published:
+published: 
   - "true"
   - published
+draft: false
 layout: post
 title: "About Prose.io And Why It's Awesome!"
+
 ---
 
 Writing a blog post with Jekyll goes like this:
