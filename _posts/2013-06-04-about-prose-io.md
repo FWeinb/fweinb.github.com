@@ -23,7 +23,7 @@ You must have access to your computer and have everything setup to commit to you
 
 Meet [Prose.io](http://prose.io). I just found it yesterday and am writing this blog post with it!
 
-![Screenshot of this blog post ](/images/screenshot.png)
+![Screenshot of first blog post with Prose.io](/images/First%20blog%20post.png)
 
 ## Getting started with Prose.io 
 
@@ -32,7 +32,7 @@ Prose.io is completely open source and built with [Backbone.js](http://backbonej
 ## Settings up your \_config.yml
 
 This step is optional but will increase the comfort of editing your articles with Prose.io greatly.
-I never worked with [YAML](http://www.yaml.org/) before and therefore was quite irritated about the syntax, but after reading the [documentation for prose](https://github.com/prose/prose/wiki/Configuration) I got used to it.
+I never worked with [YAML](http://www.yaml.org/) before and therefore was quite irritated about the syntax, but after reading the [documentation for prose](https://github.com/prose/prose/wiki/Configuration) I found myself getting used to it quite fast.
 
 I ended up with this:
 ```yaml
@@ -63,7 +63,6 @@ Basically this tells prose where your blog/site is hosted (`siteurl`) and where 
 The `metadata` field is the most interesting part here. With that field you can customize the Metadata Viewer on Prose.io. Mine looks like this:
 
 ![Screenshot of my Metadata Viewer on Prose.io](/images/Metadata%20prose.io.png)
-
 
 ## I really like it
 
