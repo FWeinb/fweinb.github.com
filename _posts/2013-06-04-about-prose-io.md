@@ -64,7 +64,7 @@ The `metadata` field is the most interesting part here. With that field you can 
 
 ![Screenshot of my Metadata Viewer on Prose.io](/images/Metadata%20prose.io.png)
 
-## I really like it
+## I really like it!
 
 I am really pleased with what prose.io is offering me. The UI is just beautiful and gets out of the way in most cases. Some would argue that the contrast isn't that good but I like it that way. 
 Prose.io isn't limited to be used for your blog. You get access to all your repositories and can edit any file you want; which is great for making quick fixes to your README.md on the go. 
