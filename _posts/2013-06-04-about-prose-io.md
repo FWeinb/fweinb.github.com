@@ -36,7 +36,7 @@ I never worked with [YAML](http://www.yaml.org/) before and therefore was quite 
 
 I ended up with this:
 
-```
+```yaml
 prose:
   siteurl: "http://blog.weinberg.me"
   media: "images"
