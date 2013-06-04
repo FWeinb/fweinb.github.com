@@ -19,23 +19,22 @@ You have to be on your Computer and have everything setup to commit to your GitH
 
 ## How to fix it?
 
-Meet [Prose.io](http://prose.io) I just found it 10 Minutes ago and am writing this blog post with it!
+Meet [Prose.io](http://prose.io) I just found it yesterday and am writing this blog post with it!
 
 ![Screenshot of this blog post ](/images/screenshot.png)
 
 
 ## Getting started with Prose.io 
 
-Prose.io is completly open source and build with [Backbone.js](http://backbonejs.org/) you can [host it yourself](https://github.com/prose/prose/blob/master/CONTRIBUTING.md#building--installing) or just sign in with your GitHub account on [Prose.io](http://prose.io)
+Prose.io is completly open source and build with [Backbone.js](http://backbonejs.org/). You can [host it yourself](https://github.com/prose/prose/blob/master/CONTRIBUTING.md#building--installing) or just sign in with your GitHub account on [Prose.io](http://prose.io)
 
 ## Settings up your \_config.yml
 
 This step is optional but will increase the comfort of editing your articles with Prose.io greatly.
-I never worked with [YAML](http://www.yaml.org/) before and therefor I was quite irritated about the syntax. Be after reading the [documentation for prose](https://github.com/prose/prose/wiki/Configuration) you are getting used to it.
+I never worked with [YAML](http://www.yaml.org/) before and therefor I was quite irritated about the syntax but after reading the [documentation for prose](https://github.com/prose/prose/wiki/Configuration) you are getting used to it quite fast.
 
 I ended up with this:
-<div class="highlight-full-view">
-```css
+```yaml
 prose:
   siteurl: "http://blog.weinberg.me"
   media: "images"
@@ -57,13 +56,9 @@ prose:
           element: "text"
           value: "A awesome Headline!"
 ```
-</div>
 
 
 
 Basicly this tells prose where your blog/site is hosted (`siteurl`) and where to look for media fiels (`media`). 
 
-The `metadata` field is the interesting part here. 
-
-
-
+The `metadata` field is the interesting part here.
