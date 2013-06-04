@@ -20,6 +20,11 @@ prose:
           label: "Published"
           element: "checkbox"
           value: "true"
+      - name: "draft"
+        field:
+          label: "Draft"
+          element: "checkbox"
+          value: "true"
       - name: "layout"
         field:
           label: "Layout"

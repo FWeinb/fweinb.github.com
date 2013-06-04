@@ -1,10 +1,9 @@
 ---
-published: 
+published:
   - "true"
   - published
 layout: post
 title: "About Prose.io And Why It's Awesome!"
-
 ---
 
 Writing a blog post with Jekyll goes like this:
@@ -25,7 +24,7 @@ Meet [Prose.io](http://prose.io). I just found it yesterday and am writing this 
 
 ![Screenshot of first blog post with Prose.io](/images/First%20blog%20post.png)
 
-## Getting started with Prose.io 
+## Getting started with Prose.io
 
 Prose.io is completely open source and built with [Backbone.js](http://backbonejs.org/). You can [host it yourself](https://github.com/prose/prose/blob/master/CONTRIBUTING.md#building--installing) or just sign in with your GitHub account on [Prose.io](http://prose.io).
 
@@ -60,7 +59,7 @@ prose:
 ```
 
 
-Basically this tells prose where your blog/site is hosted (`siteurl`) and where to look for media files (`media`). 
+Basically this tells prose where your blog/site is hosted (`siteurl`) and where to look for media files (`media`).
 
 The `metadata` field is the most interesting part here. With that field you can customize the Metadata Viewer on Prose.io. Mine looks like this:
 
@@ -68,9 +67,9 @@ The `metadata` field is the most interesting part here. With that field you can 
 
 ## I really like it!
 
-I am really pleased with what prose.io is offering me. The UI is just beautiful and gets out of the way in most cases. Some would argue that the contrast isn't that good but I like it that way. 
-Prose.io isn't limited to be used for your blog. You get access to all your repositories and can edit any file you want; which is great for making quick fixes to your README.md on the go. 
+I am really pleased with what prose.io is offering me. The UI is just beautiful and gets out of the way in most cases. Some would argue that the contrast isn't that good but I like it that way.
+Prose.io isn't limited to be used for your blog. You get access to all your repositories and can edit any file you want; which is great for making quick fixes to your README.md on the go.
 
-Prose.io closes the last feature that Jekyll on GitHub Pages is missing. You can now edit your articles from the browser without needing access to your computer. 
+Prose.io closes the last feature that Jekyll on GitHub Pages is missing. You can now edit your articles from the browser without needing access to your computer.
 
 So check it out and tell me how you like it!
