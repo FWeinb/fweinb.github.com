@@ -1,6 +1,6 @@
 ---
 published: 
-  - "false"
+  - "true"
   - published
 layout: post
 title: "About Prose.io and why it's awesome!"
@@ -72,5 +72,4 @@ Prose.io isn't limited to be used for your blog. You get access to all your Repo
 
 Prose.io closes the last feature that Jekyll on GitHub Pages is missing. You can now edit your articles from the browser without needing access to your computer. 
 
-So check it out and tell me how you like it! 
-
+So check it out and tell me how you like it!
