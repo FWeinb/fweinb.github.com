@@ -3,7 +3,7 @@ published:
   - "true"
   - published
 layout: post
-title: "About Prose.io and why it's awesome!"
+title: "About Prose.io And Why It's Awesome!"
 
 ---
 
