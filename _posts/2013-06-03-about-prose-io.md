@@ -58,7 +58,6 @@ prose:
 ```
 
 
+Basicly this tells prose where your blog/site is hosted (`siteurl`) and where to look for media files (`media`). 
 
-Basicly this tells prose where your blog/site is hosted (`siteurl`) and where to look for media fiels (`media`). 
-
-The `metadata` field is the interesting part here.
+The `metadata` field is the interesting part here. With that field you can customize the Metadata Viewer on Prose.io
