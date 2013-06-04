@@ -58,7 +58,7 @@ prose:
 
 Basically this tells prose where your blog/site is hosted (`siteurl`) and where to look for media files (`media`). 
 
-The `metadata` field is the most interesting part here. With that field you can customize the Metadata Viewer on Prose.io. With the metadata from above you get something like this: 
+The `metadata` field is the most interesting part here. With that field you can customize the Metadata Viewer on Prose.io. Mine looks like this:
 
 ![Screenshot of my Metadata Viewer on Prose.io](/images/Metadata%20prose.io.png)
 
