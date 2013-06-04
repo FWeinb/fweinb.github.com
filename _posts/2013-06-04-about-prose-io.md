@@ -17,7 +17,7 @@ Writing a blog post with Jekyll goes like this:
 
 ## What is the problem with that?
 
-You must have access to your computer and have everything setup to commit to your GitHub account. You could argue that this is fine in 99% percent of the cases, but in those where you don't you can't fix that annoying typo someone pointed out to you and you are so deeply ashamed of.
+You must have access to your computer and have everything setup to commit to your GitHub account. You could argue that this is fine in 99% of the cases, but in those where you don't you can't fix that annoying typo someone pointed out to you and you are so deeply ashamed of.
 
 ## How to fix it?
 
