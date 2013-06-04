@@ -35,7 +35,6 @@ SCSS is great but can be improved reagarding BEM syntax.
 
 This is what a BEM structure would currently look like in SCSS
 
-<div class="highlight-full-view">
 ```css
 .block{
 }
@@ -45,7 +44,6 @@ This is what a BEM structure would currently look like in SCSS
     }
 
 ```
-</div>
 
 To be honest, this is just plain CSS no SCSS feature was used. But what is the Problem with that?
 There is to much replication. You can see that '.block' is written three times there.
@@ -55,8 +53,8 @@ There is to much replication. You can see that '.block' is written three times t
 In SCSS there is the [Referencing Parent Selectors](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#referencing_parent_selectors_): `&` which is most often use in combination with pseudo classes like `:hover`, `:before` or `:after`.
 
 But woudn't it be great to write BEM SCSS like this:
-<div class="highlight-full-view">
-```css
+
+```scss
 .block{
     &__element{
     }
@@ -64,9 +62,8 @@ But woudn't it be great to write BEM SCSS like this:
     }
 }
 ```
-</div>
 to get:
-<div class="highlight-full-view">
+
 ```css
 .block{
 }
@@ -75,10 +72,9 @@ to get:
 .block--modifier{
 }
 ```
-</div>
 
 The great thing about this would be that elements and modifiert would be block agnostic. So it would be possible to have shared modifiers like this:
-<div class="highlight-full-view">
+
 ```scss
 %sharedModifier{
     &--blue{
@@ -98,9 +94,9 @@ The great thing about this would be that elements and modifiert would be block a
 }
 
 ```
-</div>
-Resulting in
-<div class="highlight-full-view">
+
+Resulting in:
+
 ```css
 .block1{
 }
@@ -113,7 +109,6 @@ Resulting in
     color:green;
 }
 ```
-</div>
 
 # Wrapping up
 

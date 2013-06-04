@@ -46,7 +46,7 @@ $padding-code    :   2em;
         @extend %border-box;
 
         position: absolute;
-        content:attr(class);
+        content:attr(data-lang);
 
         line-height: 2em;
 
