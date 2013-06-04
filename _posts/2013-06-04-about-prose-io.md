@@ -35,7 +35,7 @@ This step is optional but will increase the comfort of editing your articles wit
 I never worked with [YAML](http://www.yaml.org/) before and therefore was quite irritated about the syntax, but after reading the [documentation for prose](https://github.com/prose/prose/wiki/Configuration) I found myself getting used to it quite fast.
 
 I ended up with this:
-
+<pre>
 ```
 prose:
   siteurl: "http://blog.weinberg.me"
@@ -58,6 +58,7 @@ prose:
           element: "text"
           value: "A awesome Headline!"
 ```
+</pre>
 
 Basically this tells prose where your blog/site is hosted (`siteurl`) and where to look for media files (`media`). 
 
