@@ -8,7 +8,6 @@ draft: true
 
 
 <pre class="codepen" data-height="400" data-type="css" data-href="882abf79f7211b64071f84614b149c4c" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/hDgKr">Check out this Pen!</a></pre>
-<script async src="http://codepen.io/assets/embed/ei.js"></script>
 
 A few days ago I had the idea to implement the direction aware hover effect I saw on [codedrops](http://tympanus.net/TipsTricks/DirectionAwareHoverEffect/) in pure CSS. The main goal was to uses as few elements as possible to not clutter the DOM with unsemantic elements. And I want to be to add different content to each panel. 
 
