@@ -5,11 +5,9 @@ title: Direction Aware Hover In Pure CSS
 draft: true
 ---
 
+<pre class="codepen" data-height="400" data-type="result" data-href="GrpqB" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/GrpqB">Check out this Pen!</a></pre>
 
-
-<pre class="codepen" data-height="400" data-type="css" data-href="882abf79f7211b64071f84614b149c4c" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/hDgKr">Check out this Pen!</a></pre>
-
-A few days ago I had the idea to implement the direction aware hover effect I saw on [codedrops](http://tympanus.net/TipsTricks/DirectionAwareHoverEffect/) in pure CSS. The main goal was to uses as few elements as possible to not clutter the DOM with unsemantic elements. And I want to be to add different content to each panel. 
+A few days ago I had the idea to implement the direction aware hover effect I saw on [codedrops](http://tympanus.net/TipsTricks/DirectionAwareHoverEffect/) in pure CSS. The main goal was to uses as few elements as possible to not clutter the DOM with unsemantic elements. Additionaly I want to add diffrent content on each panel. 
 
 ## The Basic Structure
 
@@ -18,13 +16,18 @@ The main concept is quite simple. For simplicity I will only explain how to crea
 
 The `.box` will hold the elements for each side. The inner `.box__*`'s will be the extact same size as the `.box` itself using CSS inheritance like `width:inherit;` `height:inherit;`.
 
-To better see what is going on, I colored the `.box` in green and `.box__righ` in red. You can see the result by switching to the result tab on the embedded pen.
+To better see what is going on, I colored the `.box` in green and `.box__right` in red. You can see the result by switching to the result tab on the embedded pen. You will see a red box with the content "Right → Left" because the `.box__right` is above the `.box` container. 
 
 ## Determen The Hover Direction 
 
-This is the most tricky part. But can be solved by using a pseudo element. Additionaly the content must be moved outsite the viewport to hide it. 
+This is the most tricky part. But can be solved by using a pseudo element and a little bit of thinking. The first thing to do is to hide the `.box__right` by moving it to the right using `transform:translateX(100%);` these 100 percent refere to the parent element with a `position:relative;`set. In this case to the `.box` element. 
+But that is not enough, moving the `.box` 100 percent ot the right makes it impossible to hover and therefor impossible to detect the direction of the hover. 
 
-<pre class="codepen" data-height="400" data-type="css" data-href="7e9b4dfe299e0ef903ad66f77384fda4" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/iaJLG">Check out this Pen!</a></pre>
+### :Pseudo Elements To The Rescue 
+
+Another great thing about pseudo elements is that they extend the "hoverable" region of the whole element. Let's add a `:before` pseudo element to the mix. 
+
+<pre class="codepen" data-height="400" data-type="result" data-href="7e9b4dfe299e0ef903ad66f77384fda4" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/iaJLG">Check out this Pen!</a></pre>
 
 
 
