@@ -62,11 +62,11 @@ In the demos above I used simplified code. For the following example I will use 
 
 <pre class="codepen" data-height="400" data-type="css" data-href="c93eadeb4c412e5fa79f43f64b4203da" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/vpDJa">Check out this Pen!</a></pre>
 
-Starting with the `.box__center` the first thing to do is to ensure that it's not blocking the hover interactions of the other boxes. Because it's the last element in the `.box` it initially will be above all other. Using `z-index:-1;` will move it beneath every other box.
+Starting with the `.box__center` the first thing to do is to ensure that it's not blocking the hover interactions of the other boxes. Because it's the last element in the `.box` it will be initially positioned on top of all the others
 
 The `.box__center` will move on every hover in the same direction as the box that is revealed. There is the need for a third rule on hover, this time modifying the `.box__center`. Adding this for the `.box__right` would involve a selector like `.box__right:hover ~ .box__center` and moving it to the same direction would result in `transform:translateX(100%)`. 
 
-Respectively adding this to box will result in the final code seen above (by switch to the Result tab).
+Adding this hover effect for `.box__center` to all boxes and accordingly changing the transformation to the right direction will result in the final code you can see above by switching to the result tab. 
 
 
 # Final words 
