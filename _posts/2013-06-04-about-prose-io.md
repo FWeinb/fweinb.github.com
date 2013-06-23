@@ -1,5 +1,5 @@
 ---
-published: 
+published:
   - "true"
   - published
 draft: false
