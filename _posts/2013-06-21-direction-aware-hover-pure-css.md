@@ -41,12 +41,14 @@ To see how it works disable the `overflow:hidden` and hover the yellow pseudo el
 
 ### Show The Content On Hover
 
+<pre class="codepen" data-height="400" data-type="result" data-href="9ddf05a4443a1e66e69cc305e0f75702" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/GnleK">Check out this Pen!</a></pre>
+
 The first thing to do is to add `transition:transform .4s ease` to the `.box__right` to get a nice sliding effect.
 
 The hover effect is split into two parts. The first hover effect will move the `.box__right` content in the viewport again. Another important thing is to add `z-index:1;` on hover to ensure the other boxes aren't interfering. 
 The second hover effect will ensure that the pseudo element covers the whole container to make sure you won't lose the hover while moving the mouse in another direction.
 
-<pre class="codepen" data-height="400" data-type="result" data-href="9ddf05a4443a1e66e69cc305e0f75702" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/GnleK">Check out this Pen!</a></pre>
+In the sample above You can see both of these hover effects. The pseudo element is yellow and the element will slide in from the right. 
 
 ## Lets recap 
 
