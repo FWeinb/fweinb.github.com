@@ -5,7 +5,7 @@ layout: default
 <h1>Recent Drafts: </h1>
 <ul class="archive-list">
   {% for post in site.posts %}
-    {% if post.draft  %}
+    {% if post.draft == true %}
       <li>
       {% if post.csstricks %}
           <a href="{{ post.csstricks }}" target="_blank">{{ post.title }}</a> - [CSS-Tricks]
