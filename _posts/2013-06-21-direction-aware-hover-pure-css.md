@@ -5,7 +5,7 @@ title: Direction Aware Hover In Pure CSS
 draft: true
 ---
 
-<pre class="codepen" data-height="400" data-type="result" data-href="GrpqB" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/GrpqB">Check out this Pen!</a></pre>
+<pre class="codepen" data-height="300" data-type="result" data-href="162ba1b75de88267c79052fb6c431c70" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/xgCwL">Check out this Pen!</a></pre>
 
 A few days ago I had the idea to implement the direction aware hover effect I saw on [codedrops](http://tympanus.net/TipsTricks/DirectionAwareHoverEffect/) in pure CSS. The main goal was to uses as few elements as possible to not clutter the DOM with unsemantic elements. Additionaly I want to add diffrent content on each panel. 
 
