@@ -5,7 +5,7 @@ published:
   - published
   - "true"
 title: Direction Aware Hover In Pure CSS
-draft: true
+draft: false
 ---
 
 <pre class="codepen" data-height="400" data-type="result" data-href="162ba1b75de88267c79052fb6c431c70" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/xgCwL">Check out this Pen!</a></pre>
