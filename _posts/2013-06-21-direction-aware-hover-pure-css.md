@@ -28,6 +28,18 @@ But that is not enough, moving the `.box` 100 percent ot the right makes it impo
 Another great thing about pseudo elements is that they extend the "hoverable" region of the whole element. Let's add a `:before` pseudo element to the mix. 
 
 <pre class="codepen" data-height="400" data-type="result" data-href="7e9b4dfe299e0ef903ad66f77384fda4" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/iaJLG">Check out this Pen!</a></pre>
+<aside>
+For this demo I added the abbility to toggel the `overflow:hidden` property to better understand what is going on. 
+</aside>
+
+Moving the `.box__right` 100 percent to the right made it invisibel. Only after adding the yellow colored pseudo element it's possible to hover it again. 
+
+
+### Hovering
+
+
+
+
 
 
 
