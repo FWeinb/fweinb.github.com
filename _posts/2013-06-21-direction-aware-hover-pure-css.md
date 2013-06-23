@@ -12,7 +12,7 @@ A few days ago I had the idea to implement the direction aware hover effect I sa
 ## The Basic Structure
 
 The main concept is quite simple. For simplicity I will only explain how to create this effect for the `.box__right` property, the rest should be self explanatory. Let's begin with the bar minimum: 
-<pre class="codepen" data-height="300" data-type="css" data-href="882abf79f7211b64071f84614b149c4c" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/hDgKr">Check out this Pen!</a></pre
+<pre class="codepen" data-height="300" data-type="css" data-href="882abf79f7211b64071f84614b149c4c" data-user="FWeinb" data-safe="true"><code></code><a href="http://codepen.io/FWeinb/pen/hDgKr">Check out this Pen!</a></pre>
 
 The `.box` will hold the elements for each side. The inner `.box__*`'s will be the extact same size as the `.box` itself using CSS inheritance like `width:inherit;` `height:inherit;`.
 
