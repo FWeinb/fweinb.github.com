@@ -1,0 +1,54 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="page-router.html">
+
+
+<polymer-element name="demo-app">
+  <template>
+    <style>
+      :host{
+        font-family: sans-serif;
+      }
+      .selected {
+        display: block;
+      }
+    </style>
+    <h1>Routing concept using Polymer elements for routing</h1>
+
+    <component-router>
+      <component-route route="home" auto></component-route>
+      <p>Your are on the index page, try diferent routes here:</p>
+      <p>Dynamicly load components: <a _href="#/component/1/data/hello">Load Component 1</a>|<a _href="#/component/2/data/hello">Load Component 2</a></p>
+    </component-router>
+
+
+    <!-- Create a new component-router and bind the routeData to the local route variable -->
+    <component-router routeData="{{route}}">
+
+      <!-- Define the route(s) this component will be activated on-->
+      <component-route route="component/:id:/data/:data:"></component-route>
+
+      <!--  Dynamicly load a component (using HTMLImports) and pass in custom data -->
+      <component-loader path='component-{{route.id}}.html' data="{{route.data}}" ></component-loader>
+    </component-router>
+
+<!--
+    <component-router routeData="{{route}}">
+      <component-route error />
+      <p>Route "{{route['route*']}}" was not found</p>
+    </component-router>-->
+
+  </template>
+  <script>
+
+  Polymer('demo-app',{
+
+    ready : function ( ) {
+      // Bugfix for: https://github.com/Polymer/HTMLImports/issues/60
+      this.shadowRoot.querySelectorAll('[_href]').array().forEach(function(item){
+        item.href = item.getAttribute('_href');
+      });
+    }
+
+  });
+  </script>
+</polymer-element>

@@ -1,0 +1,174 @@
+<link rel="import" href="../polymer/polymer.html">
+
+
+<script src="../js-signals/dist/signals.js"></script>
+<script src="../crossroads/dist/crossroads.js"></script>
+<script src="../hasher/dist/js/hasher.js"></script>
+
+
+<polymer-element name="component-router" attributes="routeData">
+  <template>
+    <style>
+     :host{
+      display:none;
+      -webkit-transition: opacity 300ms;
+              transition: opacity 300ms;
+     }
+     [unresolved] {
+        opacity:0;
+     }
+    </style>
+    <content />
+  </template>
+
+  <script>
+    Polymer('component-router', {
+      routeData : {},
+
+      ready : function ( ){
+        console.log('component-router', 'Ready');
+      },
+      teardown : function ( ) { },
+
+      routeTo : function ( route ) {
+        this.routeData = route;
+        if ( Platform ) Platform.flush();  // Rerun the bindings to prevent old contetnt to show up.
+      }
+    });
+  </script>
+
+</polymer-element>
+
+<polymer-element name="component-route" attributes="route auto error">
+  <script>
+    var SELECTED_TARGET = null;
+
+    var ROUTE_EVENT = 'component-route-changed';
+
+    function fireEvent(name, data, target){
+      var event = new CustomEvent("name-of-event", { detail : data });
+      (target || document).dispatchEvent(event);
+    }
+
+    function parseRoute(newHash){
+      crossroads.parse(newHash);
+    }
+
+
+    hasher.initialized.add(parseRoute);
+    hasher.changed.add(parseRoute);
+
+    crossroads.normalizeFn = crossroads.NORM_AS_OBJECT;
+
+
+    function handelRouteFor ( target ) {
+      return function ( route ){
+
+        if ( SELECTED_TARGET !== target) {
+          if (SELECTED_TARGET !== null) {
+            SELECTED_TARGET.parentNode.teardown();
+            SELECTED_TARGET.parentNode.classList.remove('selected');
+          }
+          target.parentNode.classList.add('selected');
+        }
+
+        target.parentNode.routeTo( route );
+
+
+        SELECTED_TARGET = target;
+      };
+    }
+
+    function addRoute ( route, target ){
+      return crossroads.addRoute ( route, handelRouteFor ( target ) );
+    }
+
+
+    document.addEventListener('WebComponentsReady', function(){
+      console.log("Start Hasher");
+      hasher.init();
+    }.bind(this));
+
+    Polymer('component-route',{
+      route : '',
+
+      ready : function() {
+        addRoute ( this.route, this );
+      }
+    });
+  </script>
+
+</polymer-element>
+
+<polymer-element name="component-loader" attributes="path">
+  <script>
+
+  var toAbsolutePath = function ( file ){
+    var pathname = location.pathname;
+    var index = pathname.lastIndexOf('/');
+        pathname = pathname.substring(0, index === -1 ? undefined : index);
+    return location.protocol + '//' + location.host + pathname + '/' + file;
+  };
+
+  var isAbsolute = function ( path ) {
+    return path.indexOf('http') === 0;
+  };
+
+  var extractName = function( path ){
+    var filename = path.substring(path.lastIndexOf('/')+1);
+    return filename.substring(0, filename.lastIndexOf('.'));
+  };
+  var setResolved = function ( el ) {
+  };
+
+  Polymer('component-loader', {
+
+    values : {},
+
+    ready : function ( ) {
+      this.values = this.values || {};
+      this.setAttribute('unresolved', '');
+    },
+
+    pathChanged : function( ){
+      this.innerHTML = '';
+      this.setAttribute('unresolved', '');
+
+      var loadPath = this.path;
+
+      if ( !isAbsolute( this.path ) ) {
+        loadPath = toAbsolutePath ( this.path );
+      }
+
+      Polymer.import ( [loadPath] , function ( ){
+        var lC = this.loadedComponent = document.createElement ( extractName ( loadPath ) );
+
+        this.appendChild( lC );
+
+        this.injectValues ();
+
+        if ( Platform.flush ) Platform.flush();
+
+        this.removeAttribute('unresolved');
+      }.bind(this));
+    },
+
+    nodeFilter : function ( name ) {
+      return name !== 'page';
+    },
+
+    injectValues : function ( ){
+      this.attributes.array().filter(function(item){ return this.nodeFilter ( item.nodeName ); },this).forEach(function(item){
+        this.loadedComponent[item.nodeName] = item.value;
+      }, this);
+    },
+
+    attributeChanged: function(attrName, oldVal, newVal) {
+      if ( this.loadedComponent && this.nodeFilter ( attrName ) ) {
+        this.loadedComponent[attrName] = newVal;
+      }
+    },
+
+  });
+  </script>
+</polymer-element>

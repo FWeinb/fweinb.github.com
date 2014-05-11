@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+
+  <title>untitled-element Demo</title>
+
+  <script src="../platform/platform.js"></script>
+  <link rel="import" href="demo-app.html">
+
+</head>
+<body unresolved>
+
+<demo-app></demo-app>
+
+<!--
+  <label>Component:</label>
+  <select id="component">
+    <option>component-1.html</option>
+    <option>component-2.html</option>
+  </select>
+  <br>
+
+  <label>Data:</label>
+  <select id="data">
+    <option>This is cool</option>
+    <option>Test</option>
+    <option>Yeah</option>
+  </select>
+  <br>
+
+  <component-loader path="{{ page }}" test="{{ pageData.test }}" />
+
+  <script>
+
+    window.addEventListener('WebComponentsReady', function ( ) {
+
+      window.model = {
+        page : 'component-1.html',
+        pageData : {
+          test : 'This is cool'
+        }
+      };
+      document.body.addEventListener('change', function(e) {
+        if ( e.target.id == 'data' ) {
+          window.model.pageData.test = e.target.value;
+        } else if ( e.target.id == 'component') {
+          window.model.page = e.target.value;
+        }
+      });
+
+
+    });
+
+  </script>
+-->
+</body>
+</html>

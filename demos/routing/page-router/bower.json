@@ -1,0 +1,15 @@
+{
+  "name": "page-router",
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "x-route": "~0.0.2",
+    "crossroads": "~0.12.0",
+    "js-signals": "~1.0.0",
+    "hasher": "~1.2.0",
+    "core-selection": "Polymer/core-selection#~0.2.3"
+  },
+  "resolutions": {
+    "polymer": "~0.2.0",
+    "platform": "~0.2.3"
+  }
+}
