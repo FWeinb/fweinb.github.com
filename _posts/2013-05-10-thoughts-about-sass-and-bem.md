@@ -9,7 +9,7 @@ I don't want do repeat everything said in these articels.
 Rather I want to share my thoughts about [BEM] in combination with [SCSS].
 
 [1]: http://csswizardry.com/2011/09/writing-efficient-css-selectors/
-[2]: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Writing_efficient_CSS
+[2]: http://www.whoishostingthis.com/resources/efficient-css/
 [3]: http://css-tricks.com/efficiently-rendering-css/
 [4]: https://developers.google.com/speed/docs/best-practices/rendering
 
